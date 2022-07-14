@@ -1,5 +1,5 @@
 version: '0.1.0'
-id: '5'
+id: '0.1.0'
 config:
   testRunner:
     command: ./node_modules/.bin/mocha
