@@ -1,4 +1,5 @@
 version: '0.1.0'
+id: "0.1.0"
 config:
   testRunner:
     command: npm run test
@@ -19,8 +20,8 @@ levels:
     steps:
       - id: '1.1'
       - id: '2'
-  steps:
-    - id: '2.1'
-      setup:
-        files:
-          - index.html
+        steps:
+          - id: '2.1'
+            setup:
+              files:
+                - index.html
