@@ -12,6 +12,20 @@ Here's where you can put a description, examples, and instructions for the lesso
 
 This is the test text. Create an `index.html` file to pass this lesson.
 
+## 2. Add DOCTYPE
+
+> Add a DOCTYPE to an HTML file
+
+HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.
+
+### 2.1
+
+Add the DOCTYPE
+
+#### HINTS
+
+- Add `<!DOCTYPE html>` at the top of `index.html` and save the file
+
 #### HINTS
 
 - This is a hint to help people through the test
