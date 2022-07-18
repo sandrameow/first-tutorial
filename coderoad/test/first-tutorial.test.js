@@ -25,3 +25,27 @@ describe('first-tutorial folder', () => {
     assert(rootDir.indexOf('index.html') >= 0)
   })
 })
+
+//second lesson test
+
+const readFile = util.promisify(fs.readFile)
+const getIndexFile = async (dir = process.cwd()) => {
+  const pathToIndex = path.join(dir, '..', 'index.html')
+  const indexFile = await readFile(pathToIndex)
+
+  if (!indexFile) {
+    throw new Error(`Could not find ${pathToIndex}`)
+  }
+  return indexFile
+}
+
+describe('index.html', () => {
+  let indexFile
+  before(async () => {
+    indexFile = await getIndexFile()
+  })
+
+  it('should have a DOCTYPE', () => {
+    assert(/<!DOCTYPE html>/i.test(indexFile))
+  })
+})
