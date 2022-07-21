@@ -1,4 +1,6 @@
-{ "version": "0.1.0",
+{
+  "id": "0.1.0",
+  "version": "0.1.0",
   "summary": {
     "title": "Introduction",
     "description": "This is an introduction to your tutorial. It will show up on the first page when your tutorial is started."
@@ -40,10 +42,6 @@
         {
           "id": "1.1",
           "content": "This is the test text. Create an `index.html` file to pass this lesson.",
-          "hints": [
-            "This is a hint to help people through the test",
-            "Second hint for 1.1, don't worry if the hints don't show up yet"
-          ],
           "setup": {
             "commits": [
               "a8310fb8a496be6d974a2f8b760d0c671cdf35a4"
@@ -54,6 +52,38 @@
               "f70c1991ff91a5237a2c1138c4999c3dbcd07b80"
             ]
           }
+        },
+        {
+          "id": "2",
+          "steps": [
+            {
+              "id": "2.1",
+              "setup": {
+                "files": [
+                  "index.html"
+                ]
+              }
+            }
+          ],
+          "setup": {
+            "commits": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Add DOCTYPE",
+      "summary": "Add a DOCTYPE to an HTML file",
+      "content": "HTML files should have a `DOCTYPE`. You can add one at the top of the `index.html` file like this: `<!DOCTYPE html>`.",
+      "steps": [
+        {
+          "id": "2.1",
+          "content": "Add the DOCTYPE",
+          "hints": [
+            "This is a hint to help people through the test",
+            "Second hint for 1.1, don't worry if the hints don't show up yet"
+          ]
         }
       ]
     }
